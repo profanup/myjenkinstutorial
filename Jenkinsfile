@@ -5,6 +5,7 @@ pipeline {
             steps {
                 sh 'mvn --version'
                 sh 'echo $JAVA_HOME'
+                sh 'pwd'
             }
         }
     }
