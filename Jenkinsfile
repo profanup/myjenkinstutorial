@@ -6,8 +6,6 @@ pipeline {
                 sh 'mvn --version'
                 sh 'echo $JAVA_HOME'
                 sh 'pwd'
-                sh 'touch /home/`$USER`/CreatedFromDocker'
-                sh 'echo This is new file >> /home/`$USER`/CreatedFromDocker'
             }
         }
     }
