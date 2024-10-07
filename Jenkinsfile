@@ -5,7 +5,9 @@ pipeline {
             steps {
                 sh 'mvn --version'
                 sh 'echo $JAVA_HOME'
-                sh 'pwd'
+                sh 'cd ~'
+                sh 'touch temp && echo "This is me" > temp'
+                sh 'cat temp'
             }
         }
     }
