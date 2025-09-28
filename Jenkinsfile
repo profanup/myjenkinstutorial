@@ -8,6 +8,8 @@ pipeline {
                 sh 'cd ~'
                 sh 'touch temp && echo "This is me" > temp'
                 sh 'cat temp'
+                sh 'echo "Today's date is:" `date` >> temp'
+                sh 'cat temp'
             }
         }
     }
